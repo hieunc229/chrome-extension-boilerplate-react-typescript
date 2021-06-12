@@ -14,7 +14,8 @@ button {
   }
 }
 
-button.btn {
+
+button.btn, .btn {
   &Selected {
     color: $blue;
     cursor: not-allowed;

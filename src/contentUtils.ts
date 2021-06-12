@@ -1,5 +1,5 @@
 import { AppConfig } from "./types";
-
+import {CSSProperties} from "react";
 /**
  * Create iframe to display popup.html
  */
@@ -13,7 +13,7 @@ export function createFrame() {
         iframe.src = chrome.extension.getURL("/popup.html");
 
         setStyle(iframe, {
-            height: `320px`,
+            height: `0px`,
             width: `400px`,
             position: `fixed`,
             top: `0px`,

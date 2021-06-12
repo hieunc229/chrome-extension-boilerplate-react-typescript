@@ -1,8 +1,8 @@
 $blue: #0366d6;
 $grey: rgba(#000, 0.2);
-$primary-color: #3c2a0a;
+$primary-color: #333;
 $background-color: white;
-$line: rgba(lighten(#3c2a0a, 20%), 0.6);
+$line: rgba(#333, 0.3);
 
 @import "button";
 @import "boxes";
@@ -24,12 +24,11 @@ $line: rgba(lighten(#3c2a0a, 20%), 0.6);
   box-shadow: 0 6px 18px $grey;
 
   &Header {
-    font-size: 12px;
-    background: wheat;
-
     display: flex;
+    padding: .6em;
+    font-size: 12px;
+
     flex-direction: row;
-    justify-content: flex-end;
     border-bottom: 1px solid $line;
 
     button {
