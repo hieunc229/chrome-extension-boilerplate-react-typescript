@@ -10,7 +10,7 @@ This repository is a fork of [chrome-extension-react-typescript-boilerplate](htt
 - React with Typescript
 - Sass + Sass module
 - Popup with basic layout (header, body, footer)
-- Multilingua `public/_locales` (see [i18n](https://developer.chrome.com/docs/extensions/reference/i18n/))
+- Multilingual `public/_locales` (see [i18n](https://developer.chrome.com/docs/extensions/reference/i18n/))
 - `public` directory (will copy when building, so you don't need to touch the build directory)
 - `content_scripts` config (interact directly with current page's Document)
 
