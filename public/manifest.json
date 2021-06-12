@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "react-chrome",
+    "description": "A react chrome extension boilerplate",
+    "version": "0.0.1",
+    "default_locale": "en",
+    "browser_action": {
+        "default_icon": "icon16.png"
+    },
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "js/content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        "popup.html"
+    ]
+}

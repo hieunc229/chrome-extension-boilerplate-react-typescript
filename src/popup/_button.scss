@@ -1,0 +1,31 @@
+button {
+  color: inherit;
+  border: unset;
+  cursor: pointer;
+  transition: 200ms;
+  -webkit-appearance: none;
+  background-color: unset;
+  font-size: inherit;
+  font-weight: 500;
+  padding: 0.6em 1em;
+
+  &:hover {
+    color: lighten($blue, 10%);
+  }
+}
+
+button.btn {
+  &Selected {
+    color: $blue;
+    cursor: not-allowed;
+  }
+  &Primary {
+    padding: 0.8em 1.6em;
+    border-radius: 5px;
+    border: 1px solid $line;
+
+    &:hover {
+      border-color: $blue;
+    }
+  }
+}
